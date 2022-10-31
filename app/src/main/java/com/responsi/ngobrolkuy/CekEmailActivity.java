@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class ProfilePicActivity extends AppCompatActivity {
+public class CekEmailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_pic);
+        setContentView(R.layout.activity_cek_email);
 
-        TextView lewati;
+        TextView kembali;
 
-        lewati = findViewById(R.id.lupapass);
-        lewati.setOnClickListener(new View.OnClickListener() {
+        kembali = findViewById(R.id.btnKembali);
+        kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent lewatii = new Intent(ProfilePicActivity.this,HomeActivity.class);
-                startActivity(lewatii);
+                Intent cekk = new Intent(CekEmailActivity.this,PulihkanActivity.class);
+                startActivity(cekk);
             }
         });
     }
